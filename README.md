@@ -69,7 +69,7 @@ conda install iqtree=2.3.6
 ## Running the Analysis
 Run the analysis using the provided Bash script:
 ```bash
-bash run_analysis.bash
+bash run_analysis.sh
 ```
 
 ## License
