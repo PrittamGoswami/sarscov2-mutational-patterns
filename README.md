@@ -12,7 +12,7 @@ This repository provides the necessary resources to reproduce the analysis prese
 - [License](#license)
 
 ## Overview
-The project leverages multifasta genome sequences, bulk transcriptomics, and single-cell transcriptomics datasets to analyze the mutational dynamics of SARS-CoV-2. We also integrate oxidative damage response gene sets to assess host responses contributing to viral mutations.
+The project employs a multi-omics approach, leveraging genomics, bulk transcriptomics, and single-cell transcriptomics datasets to identify mutational patterns in SARS-CoV-2 and uncover their underlying causes.
 
 ## Prerequisites
 - Anaconda
