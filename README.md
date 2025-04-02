@@ -1,6 +1,6 @@
 # Multi-omics Insights into the Role of Host Innate Immunity in Shaping SARS-CoV-2 Mutational Patterns
 
-This repository contains the complete pipeline and necessary resources to reproduce the analysis presented in our study. The analysis focuses on investigating mutation patterns in SARS-CoV-2, including temporal variations, mutation hotspots, and host-induced mutation signatures, utilizing both bulk and single-cell transcriptomics data.
+This repository provides the necessary resources to reproduce the analysis presented in our study. 
 
 ## Table of Contents
 - [Overview](#overview)
@@ -26,7 +26,7 @@ To reproduce the analysis, follow the data preparation steps below:
      - `Sequence_Data/sequences.fasta`
      - `Sequence_Data/sequences.csv`
 
-2. **Download Bulk Transcriptomics Data:**
+2. **Download and Extract Bulk Transcriptomics Data:**
    ```bash
    mkdir Bulk-Transcriptomics
    wget -O Bulk-Transcriptomics/GSE205099.tar "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE205099&format=file"
@@ -35,7 +35,7 @@ To reproduce the analysis, follow the data preparation steps below:
    gunzip Bulk-Transcriptomics/GSE205099_RAW/*.gz
    ```
 
-3. **Download Single-Cell Transcriptomics Data:**
+3. **Download and Extract Single-Cell Transcriptomics Data:**
    ```bash
    mkdir Single-Cell-Transcriptomics
    wget -O Single-Cell-Transcriptomics/GSE171524_RAW.tar "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE171524&format=file"
@@ -46,7 +46,7 @@ To reproduce the analysis, follow the data preparation steps below:
    gunzip Single-Cell-Transcriptomics/GSE171524_lung_metaData.txt.gz
    ```
 
-4. **Download Oxidative Damage Response Gene Set:**
+4. **Download the Oxidative Damage Response Gene Set:**
    ```bash
    wget -O WP_OXIDATIVE_DAMAGE_RESPONSE.gmt "https://www.gsea-msigdb.org/gsea/msigdb/human/download_geneset.jsp?geneSetName=WP_OXIDATIVE_DAMAGE_RESPONSE&fileType=gmt"
    ```
@@ -64,7 +64,6 @@ conda install -y -c conda-forge -c bioconda pandas==2.2.3 numpy==1.26.4 matplotl
 pip install decoupler==1.8.0
 conda install mafft=7.525
 conda install iqtree=2.3.6
-echo "Conda environment 'mutatioanalysis' setup complete."
 ```
 
 ## Running the Analysis
@@ -76,3 +75,5 @@ bash run_analysis.bash
 ## License
 This project is licensed under the MIT License.
 
+## Citation
+To be added
