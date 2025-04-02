@@ -12,7 +12,7 @@ This repository provides the necessary resources to reproduce the analysis prese
 - [License](#license)
 
 ## Overview
-The project employs a multi-omics approach, leveraging genomics, bulk transcriptomics, and single-cell transcriptomics datasets to identify mutational patterns in SARS-CoV-2 and uncover their underlying causes.
+The project employs a multi-omics approach, leveraging publicly available genomics, bulk transcriptomics, and single-cell transcriptomics datasets to identify mutational patterns in SARS-CoV-2 and uncover their underlying causes.
 
 ## Prerequisites
 - Anaconda
