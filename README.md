@@ -8,7 +8,6 @@ This repository provides the necessary resources to reproduce the analysis prese
 - [Data Download](#data-download)
 - [Environment Setup](#environment-setup)
 - [Running the Analysis](#running-the-analysis)
-- [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 ## Overview
