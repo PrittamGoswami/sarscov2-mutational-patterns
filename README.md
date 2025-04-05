@@ -66,8 +66,13 @@ conda install iqtree=2.3.6
 ```
 
 ## Running the Analysis
+Clone the repository:
+```bash
+git clone https://github.com/PrittamGoswami/sarscov2-mutational-patterns.git
+```
 Run the analysis using the provided Bash script:
 ```bash
+cd sarscov2-mutational-patterns
 bash run_analysis.sh
 ```
 
