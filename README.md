@@ -20,7 +20,7 @@ The project employs a multi-omics approach, leveraging publicly available genomi
 To reproduce the analysis, follow the data preparation steps below:
 
 1. **Download SARS-CoV-2 Genome Sequences:**
-   - Download complete genomes and metadata from [NCBI Virus](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&VirusLineage_ss=Severe%20acute%20respiratory%20syndrome%20coronavirus%202,%20taxid:2697049&QualNum_i=0&Completeness_s=complete&HostLineage_ss=Homo%20sapiens%20(human),%20taxid:9606)
+   - Download complete genomes and metadata from [NCBI Virus](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&VirusLineage_ss=Severe%20acute%20respiratory%20syndrome%20coronavirus%202,%20taxid:2697049&QualNum_i=0&Completeness_s=complete&HostLineage_ss=Homo%20sapiens%20(human),%20taxid:9606), including the Country information and Accession ID version.
    - Save them as:
      - `Sequence_Data/sequences.fasta`
      - `Sequence_Data/sequences.csv`
