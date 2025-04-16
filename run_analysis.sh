@@ -15,7 +15,7 @@ echo "====================================================="
 echo "2. MULTIPLE SEQUENCE ALIGNMENT AND TREE CONSTRUCTION"
 echo "====================================================="
 # Run the script to perform multiple sequence alignment and tree construction
-stdbuf -oL python -u Scripts/2.msa_and_tree_construction.py threads=30
+stdbuf -oL python -u Scripts/2.msa_and_tree_construction.py #--threads n (if needed)
 echo " Generated MSA and Tree files stored in the Sample sub-directories."
 echo " Multiple sequence alignment and Tree Construction Completed successfully!"
 

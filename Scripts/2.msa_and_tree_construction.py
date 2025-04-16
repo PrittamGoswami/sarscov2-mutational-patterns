@@ -1,6 +1,7 @@
 import os
 import subprocess
 import argparse
+import multiprocessing
 
 def run_mafft(input_fasta, output_fasta, threads):
     """
@@ -133,14 +134,23 @@ def construct_msa_and_phylogenetic_tree(folder_path, outgroup_sequence, sample_s
 
 
 def main():
+    cpu_count = multiprocessing.cpu_count()
+
     parser = argparse.ArgumentParser(description="Run MSA and Phylogenetic Tree construction.")
-    parser.add_argument("threads", type=int, help="Number of CPU threads to use.", default=3)
+    parser.add_argument(
+        "--threads",
+        type=int,
+        default=cpu_count,
+        help=f"Number of CPU threads to use. Default: number of available cores ({cpu_count})"
+    )
     args = parser.parse_args()
-    
-    construct_msa_and_phylogenetic_tree(folder_path = "Samples/",
-                                        outgroup_sequence = "NC_045512.2",
-                                        sample_size = 5250,
-                                        threads_to_be_used = args.threads)
+
+    construct_msa_and_phylogenetic_tree(
+        folder_path="Samples/",
+        outgroup_sequence="NC_045512.2",
+        sample_size=5250,
+        threads_to_be_used=args.threads
+    )
 
 if __name__ == "__main__":
     main()
