@@ -36,8 +36,8 @@ def run_model_selection(aligned_fasta, threads):
     Returns:
         str: Best-fit substitution model according to BIC. otherwise return None.
     """
-    os.makedirs("model_selector", exist_ok=True)
-    prefix = os.path.join(output_dir, "model_selection")
+    os.makedirs("model_selection", exist_ok=True)
+    prefix = os.path.join("model_selection", "model_selection")
 
     # Construct the IQ-TREE command
     command = [
