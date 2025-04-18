@@ -58,7 +58,7 @@ conda activate mutatioanalysis
 conda config --add channels conda-forge
 conda config --add channels bioconda
 conda install -y -c conda-forge -c bioconda pandas==2.2.3 numpy==1.26.4 matplotlib==3.10.1 seaborn==0.13.2 \
-               scikit-learn biopython==1.85 pydeseq2==0.4.12 mygene==3.1.0 numba==0.60.0 platformdirs==4.3.7 \
+               scikit-learn=1.6.1 biopython==1.85 pydeseq2==0.4.12 mygene==3.1.0 numba==0.60.0 platformdirs==4.3.7 \
                gseapy==1.1.5 adjustText==1.2.0 scanpy==1.10.4 dask=2025.2.0 jupyterlab==4.3.5 logomaker==0.8.6 ipykernel==6.29.5
 pip install decoupler==1.8.0
 conda install mafft=7.525
